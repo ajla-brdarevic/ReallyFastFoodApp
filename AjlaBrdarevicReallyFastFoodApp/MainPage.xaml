@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AjlaBrdarevicReallyFastFoodApp.MainPage"
+             BackgroundColor="#ffeade">
+
+    <StackLayout>
+        <StackLayout BackgroundColor="#ffeade">
+            <!--PODNASLOV-->
+            <Label
+                Text="ZAISTA BRZO"
+                TextColor="#000000"
+                FontSize="18"
+                HorizontalTextAlignment="Center"
+                Padding="12"/>
+
+            <!--NASLOV-->
+            <Label
+                Text="naručivanje i dostava hrane"
+                FontSize="30"
+                TextColor="#000000"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+
+            <!--SLIKA - REKLAMA-->
+            <Image Source="reklama.png" 
+                HeightRequest="220">
+            </Image>
+        </StackLayout>
+
+        <!--DNEVNI MENI-->
+        <!--DUGME DNEVNI MENI-->
+        <Border
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            HeightRequest="50"
+            WidthRequest="150"
+            BackgroundColor="#e9e9e9"
+            StrokeShape="RoundRectangle 10, 10, 10, 10"
+            StrokeThickness="0">
+            <Label Text="Dnevni meni"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"
+                   FontSize="25"></Label>
+        </Border>
+        <!--JELA-->
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="CenterAndExpand"
+                     BackgroundColor="#ffffff">
+
+                <!--JELO1-->
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Image x:Name="Slika1"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       Margin="10"
+                       HorizontalOptions="CenterAndExpand">
+                </Image>
+
+                <BoxView Color="#ff904c"
+                         WidthRequest="1"
+                         HeightRequest="15"
+                         HorizontalOptions="Center">
+                </BoxView>
+
+                <Label x:Name="Naziv1"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#000000">
+                </Label>
+
+                <Label x:Name="Cijena1"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#000000">
+                </Label>
+
+                <CheckBox x:Name="Odabir1"
+                          HorizontalOptions="Center"
+                          Color="#e9e9e9">
+                </CheckBox>
+
+                <Border BackgroundColor="#ffffff"
+                        HeightRequest="35"
+                        WidthRequest="50"
+                        StrokeShape="RoundRectangle 10, 10, 10, 10"
+                        Margin="12">
+                     <Entry x:Name="Kolicina1"
+                            HorizontalOptions="Center"
+                            Placeholder="Količina"
+                            PlaceholderColor="#000000"
+                            TextColor="#000000">
+                     </Entry>
+                 </Border>
+
+                <Frame BackgroundColor="#ff904c"
+                       BorderColor="#ff904c"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       CornerRadius="20">
+                    <Label x:Name="Kalorije1"
+                            TextColor="#000000"
+                            FontSize="12"/>
+                </Frame>
+
+                <Label Text="Calories"
+                       TextColor="#000000"
+                       FontSize="12"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center">
+                </Label>
+
+                <Label Text="Kcal"
+                       TextColor="DarkGrey"
+                       HorizontalTextAlignment="Center"
+                       FontSize="10">
+                </Label>
+
+            </StackLayout>
+
+                <!--JELO2-->
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Image x:Name="Slika2"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       Margin="10"
+                       HorizontalOptions="CenterAndExpand"/>
+
+                <BoxView Color="Gray"
+                         WidthRequest="1"
+                         HeightRequest="15"
+                         HorizontalOptions="Center">
+                </BoxView>
+
+                <Label x:Name="Naziv2"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#000000">
+                </Label>
+
+                <Label x:Name="Cijena2"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#000000">
+                </Label>
+
+                <CheckBox x:Name="Odabir2"
+                          HorizontalOptions="Center"
+                          Color="#e9e9e9">
+                </CheckBox>
+
+                <Border BackgroundColor="#ffffff"
+                        HeightRequest="35"
+                        WidthRequest="50"
+                        StrokeShape="RoundRectangle 10, 10, 10, 10"
+                        Margin="12">
+                     <Entry x:Name="Kolicina2"
+                            HorizontalOptions="Center"
+                            Placeholder="Količina"
+                            PlaceholderColor="#000000"
+                            TextColor="#000000">
+                     </Entry>
+                </Border>
+
+                <Frame BackgroundColor="#ff904c"
+                       BorderColor="#ff904c"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       CornerRadius="20">
+                     <Label x:Name="Kalorije2"
+                            TextColor="Black"
+                            FontSize="11"/>
+                </Frame>
+
+                <Label Text="Calories"
+                       TextColor="#000000"
+                       FontSize="12"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center">
+                </Label>
+
+                <Label Text="Kcal"
+                       TextColor="DarkGrey"
+                       HorizontalTextAlignment="Center"
+                       FontSize="10">
+                </Label>
+
+            </StackLayout>
+
+                <!--JELO3-->
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Image x:Name="Slika3"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       Margin="10"
+                       HorizontalOptions="CenterAndExpand"/>
+
+                <BoxView Color="Gray"
+                         WidthRequest="1"
+                         HeightRequest="15"
+                         HorizontalOptions="Center">
+                </BoxView>
+
+                <Label x:Name="Naziv3"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#000000">
+                </Label>
+
+                <Label x:Name="Cijena3"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#000000">
+                </Label>
+
+                <CheckBox x:Name="Odabir3"
+                          HorizontalOptions="Center"
+                          Color="#e9e9e9">
+                </CheckBox>
+
+                <Border BackgroundColor="#ffffff"
+                        HeightRequest="35"
+                        WidthRequest="50"
+                        StrokeShape="RoundRectangle 10, 10, 10, 10"
+                        Margin="12">
+                     <Entry x:Name="Kolicina3"
+                            HorizontalOptions="Center"
+                            Placeholder="Količina"
+                            PlaceholderColor="#000000"
+                            TextColor="#000000">
+                     </Entry>
+                </Border>
+
+                <Frame BackgroundColor="#ff904c"
+                       BorderColor="#ff904c"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       CornerRadius="20">
+                     <Label x:Name="Kalorije3"
+                            TextColor="#000000"
+                            FontSize="11"/>
+                </Frame>
+
+                <Label Text="Calories"
+                       TextColor="#000000"
+                       FontSize="12"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center">
+                </Label>
+
+                <Label Text="Kcal"
+                       TextColor="DarkGrey"
+                       HorizontalTextAlignment="Center"
+                       FontSize="10">
+                </Label>
+
+            </StackLayout>
+
+                <!--JELO4-->
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Image x:Name="Slika4"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       Margin="10"
+                       HorizontalOptions="CenterAndExpand"/>
+
+                <BoxView Color="Gray"
+                         WidthRequest="1"
+                         HeightRequest="15"
+                         HorizontalOptions="Center">
+                </BoxView>
+
+                <Label x:Name="Naziv4"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#000000">
+                </Label>
+
+                <Label x:Name="Cijena4"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#000000">
+                </Label>
+
+                <CheckBox x:Name="Odabir4"
+                          HorizontalOptions="Center"
+                          Color="#e9e9e9">
+                </CheckBox>
+
+                <Border BackgroundColor="#ffffff"
+                        HeightRequest="35"
+                        WidthRequest="50"
+                        StrokeShape="RoundRectangle 10, 10, 10, 10"
+                        Margin="12">
+                     <Entry x:Name="Kolicina4"
+                            HorizontalOptions="Center"
+                            Placeholder="Količina"
+                            PlaceholderColor="#000000"
+                            TextColor="#000000">
+                     </Entry>
+                </Border>
+                    
+                <Frame BackgroundColor="#ff904c"
+                       BorderColor="#ff904c"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       CornerRadius="20">
+                     
+                     <Label x:Name="Kalorije4"
+                            TextColor="#000000"
+                            FontSize="11"/>
+                </Frame>
+
+                <Label Text="Calories"
+                       TextColor="#000000"
+                       FontSize="12"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center">
+                </Label>
+
+                <Label Text="Kcal"
+                       TextColor="DarkGrey"
+                       HorizontalTextAlignment="Center"
+                       FontSize="10">
+                </Label>
+            </StackLayout>
+        </StackLayout>
+       
+        <StackLayout Orientation="Vertical"
+                     HorizontalOptions="CenterAndExpand"
+                     HeightRequest="180">
+
+            <StackLayout Orientation="Horizontal">
+
+                <Image Source="zvjezda.png" 
+                       HeightRequest="20"
+                       WidthRequest="20"
+                       Margin="10"
+                       HorizontalOptions="CenterAndExpand"/>
+
+                <Label Text="Dostava"
+                       TextColor="#000000"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center">
+                </Label>
+
+                <Image Source="zvjezda.png" 
+                       HeightRequest="20"
+                       WidthRequest="20"
+                       Margin="10"
+                       HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+                <Label Text="20 mins - Beslatna dostava iznad 15 KM"
+                       TextColor="DarkGray"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center">
+                </Label>
+
+                <Switch IsToggled="true"
+                        OnColor="#ff904c"
+                        ThumbColor="#ffffff"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+
+                <Border BackgroundColor="#e9e9e9"
+                        Stroke="#e9e9e9"
+                        HeightRequest="40"
+                        WidthRequest="250"
+                        StrokeShape="RoundRectangle 10, 10, 10, 10">
+                    
+                    <Picker x:Name="odabirMjesta"
+                            HorizontalOptions="StartAndExpand"
+                            Title="Ulica, naselje"
+                            TitleColor="#ff904c"
+                            FontAttributes="Bold"
+                            TextColor="#000000"
+                            ItemDisplayBinding="{Binding Naziv}"/>
+                </Border>
+        </StackLayout>
+
+        <Frame BorderColor="#ffffff"
+               CornerRadius="20">
+            
+            <Button Text="NARUČI"
+                    BackgroundColor="#000000"
+                    TextColor="#ffffff"
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    CornerRadius="25"
+                    Clicked="Button_Clicked"/>
+        </Frame>
+    </StackLayout>
+</ContentPage>
